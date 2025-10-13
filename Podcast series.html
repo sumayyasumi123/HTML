@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Podcast Series</title>
+<style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header, main, footer, aside {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        header {
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        aside {
+            background-color: #e9e9e9;
+            order: -1;
+        }
+        @media (min-width: 768px) {
+            body {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            main {
+                flex: 3;
+                order: 2;
+            }
+            aside {
+                flex: 1;
+                order: 1;
+            }
+            header {
+                flex-basis: 100%;
+                order: 0;
+            }
+            footer {
+                flex-basis: 100%;
+                order: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Beginner Podcast Series</h1>
+        <p>Your journey into the world of podcasting starts here. Learn the basics with us!</p>
+    </header>
+    <aside>
+        <h3>Meet the Host</h3>
+        <figure>
+            <img src=""C:\Users\sumay\OneDrive\Pictures\host image.webp"" alt="A photo of the podcast host." style="width:100%; height:auto;">
+            <figcaption>Our host, a seasoned podcaster with years of experience.</figcaption>
+        </figure>
+    </aside>
+    <main>
+        <section>
+            <h2>Host's Welcome Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z-fATpsSu1k?si=pbsbGcpmLoE8yavm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h2>First Episode</h2>
+            <audio controls style="width: 100%;">
+                <source src="c:\Users\sumay\Downloads\WhatsApp Audio 2025-10-13 at 11.29.25 PM.mpeg" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section>
+            <h2>Storage Note</h2>
+            <p>The podcast content is securely stored on a cloud-based server to ensure easy access and scalability.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Beginner Podcast Series</p>
+    </footer>
+</body>
+</html>
