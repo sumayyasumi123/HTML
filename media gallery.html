@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media Gallery</title>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      text-align: center;
+      margin: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    .media-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    iframe, audio {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    iframe {
+      width: 560px;
+      height: 315px;
+      max-width: 100%;
+    }
+    audio {
+      width: 300px;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <h1>My Media Gallery</h1>
+
+  <div class="media-container">
+    <!-- Embedded YouTube Video -->
+    <div>
+      <h2>Featured Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HmoUSSVSV7I?si=SaD8YiGeD8FoxxWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Embedded Audio File -->
+    <div>
+      <h2>Sample Audio</h2>
+      <audio controls>
+        <source src="C:\Users\sumay\Downloads\WhatsApp Audio 2025-10-13 at 11.29.25 PM.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+</body>
 </body>
 </html>
