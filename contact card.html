@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company contact card</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    /* Fixed Header */
+    header {
+      background-color: #2e0679;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5em;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    /* Profile Section */
+    .profile-section {
+      background-color: #fff;
+      width: 80%;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+      overflow: auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Profile Image */
+    .profile-section img {
+      float: left;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    /* Employee Info */
+    .employee-info {
+      overflow: hidden;
+    }
+
+    .employee-info h2 {
+      margin: 0;
+      color: #333;
+    }
+
+    .employee-info h4 {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    .employee-info p {
+      color: #444;
+    }
+
+    /* Vertical Divider */
+    .divider {
+      border-left: 2px solid #ccc;
+      height: 130px;
+      position: absolute;
+      right: 220px;
+      top: 40px;
+    }
+
+    /* Contact Info Box */
+    .contact-info {
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      background-color: #e8f0fe;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      width: 180px;
+      text-align: center;
+    }
+
+    .contact-info h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    /* Scroll if content overflows */
+    .profile-section {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>Company Contact Card</header>
+  <div class="profile-section">
+    <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg">    
+    <div class="employee-info">
+      <h2>Kavitha NS</h2>
+      <h4>Software Engineer</h4>
+      <p>
+        Kavitha is a dedicated software developer with over 5 years of experience 
+        in full-stack web development. He specializes in JavaScript frameworks 
+        and loves creating innovative solutions to modern tech challenges.
+      </p>
+    </div>
+    <div class="divider"></div>
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+      <p>📞 +91 9846530341</p>
+      <p>✉️ kavi.ns@company.com</p>
+    </div>
+  </div>
+</body>
+</html>
