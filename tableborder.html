@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive login Page</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            font-family: Arial, sans-serif; 
+        }
+        body{
+            display: flex;
+            min-height:100vh;
+        }
+        .left-side{
+            flex: 1;
+            background: linear-gradient(rgb(216,182,243),rgb(243,135,160));
+        }
+
+      .right-side {
+      flex: 1;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      width: 750px; 
+      padding: 30px;
+    }
+
+    .login-box h2 {
+      text-align: left;
+      color: orangered;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      
+      color: #333;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .remember input {
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      background-color: orangered;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      
+      
+      
+      
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left-side {
+        display: none;
+      }
+
+      .right-side {
+        flex: none;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-box {
+        width: 90%;
+        max-width: 350px;
+      }
+
+      .h2 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="left-side"></div>
+
+  
+  <div class="right-side">
+    <div class="login-box">
+      <h2>Login Form</h2>
+      <form>
+        <label for="email"><b>Email :</b></label>
+        <input type="email" id="email">
+
+        <label for="password"><b>Password :</b></label>
+        <input type="password" id="password">
+
+        <div class="remember">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember Me</label>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
